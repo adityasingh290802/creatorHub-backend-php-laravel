@@ -13,4 +13,11 @@ class UserProfile extends Model
         'followers_count',
         'following_count'
     ];
+
+    public function user()
+   {
+       return $this->belongsTo(User::class);
+   }
 }
+
+

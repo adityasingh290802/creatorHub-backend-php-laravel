@@ -35,4 +35,11 @@ class User extends Authenticatable implements JWTSubject
     {
         return $this->hasOne(UserProfile::class);
     }
+
+    public function videos()
+   {
+        return $this->hasMany(Video::class);
+   }
+
+   
 }
